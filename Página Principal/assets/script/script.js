@@ -1,4 +1,4 @@
-1const divResultbuttonSecundaria = document.querySelector('#divResultbuttonSecundaria');
+const divResultbuttonSecundaria = document.querySelector('#divResultbuttonSecundaria');
 const buttonAcessar = document.querySelector('#buttonAcessar');
 const buttonAdicionar = document.querySelector('#buttonAdicionar');
 const buttonProdutos = document.querySelector('#buttonProdutos '); 
