@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmEstoque</title>
+    <meta name="author" content="Joao Pedro e Anderson">
+    <link rel="stylesheet" href="./assets/estilo/style.css">
+    <link rel="stylesheet" href="./assets/estilo/normalize.css">
+</head>
+<body>
+    <header>
+        <a href="./index.html" id="Titulo">ControlStorageOnline</a>
+    </header>
+
+    <p id="statusServe">statusServe:OFF</p>
+
+    <p id="pInfAreaButtons" class="pInfGeral">Botoes Seleçao</p>
+    <section id="areaButtons">
+        <div id="divButtonPrincipal">
+            <button id="buttonAdicionar" class="buttonSectionareaButtons">Adicionar</button>
+            <button id="buttonAcessar" class="buttonSectionareaButtons">Acessar</button>
+        </div>
+        <div id="divResultbuttonSecundaria">
+            <button  class="buttonSectionareaButtons" id="buttonProdutos">produtos</button>
+            <button  class="buttonSectionareaButtons" id="buttonArmazens">Armazens</button>
+        </div>
+    </section>   
+
+    <p id="pInfFormAdicionarProduto" class="pInfGeral">Dados</p>
+    <main>
+        <form id="formAdicionaProduto" class="formMain">
+
+            <div class="divFormArea" >
+                <div class="divInternadivFormArea">
+                    <p class="labeldivInternaFormAreainput">Nome:</p>
+                <input id="inputNome" required class="inputdivInternadivFormArea" type="text">
+                </div>
+
+                <div class="divInternadivFormArea">
+                    <p class="labeldivInternaFormAreainput">Marca:</p>
+                    <input id="inputMarca" required  class="inputdivInternadivFormArea"  type="text">
+                </div>
+            </div>
+
+            <div class="divFormArea">
+                <div class="divInternadivFormArea">
+                    <p  class="labeldivInternaFormAreainput">Tarja:</p>
+                <input id="inputLocalizaçao" required  class="inputdivInternadivFormArea" type="text">
+                </div>
+
+                <div class="divInternadivFormArea">
+                    <p class="labeldivInternaFormAreainput">Local:</p>
+                    <input id="inputMarca"  required class="inputdivInternadivFormArea"  type="text">
+                </div>
+            </div>
+
+            <div class="divFormArea">
+                <div class="divInternadivFormArea">
+                    <p class="labeldivInternaFormAreainput">Preço:</p>
+                    <input id="inputPreço" required  class="inputdivInternadivFormArea"  type="number" min="10" max="5000">
+                </div>
+
+                <div class="divInternadivFormArea">
+                    <p class="labeldivInternaFormAreainput">Quantidade:</p>
+                    <input id="inputQuantidade" required  class="inputdivInternadivFormArea"  type="number" min="1" max="25000">
+                </div>
+            </div>
+           
+            <div id="divTextarea">
+                <label for="textareaFormAdicionaProduto" class="labeldivInternaFormAreainput">Descriçao:</label>
+                <textarea name="" id="textareaFormAdicionaProduto" required   class="inputdivInternadivFormArea"></textarea>
+            </div>
+        </form>
+
+        <form id="formAdicionaLocal">
+
+            <div class="divFormArea">
+                <div class="divInternadivFormArea" class="formMain">
+                    <p class="labeldivInternaFormAreainput">Nome:</p>
+                <input id="inputNomeLocal" required  class="inputdivInternadivFormArea" type="text">
+                </div>
+
+                <div class="divInternadivFormArea">
+                    <p class="labeldivInternaFormAreainput">Localizaçao</p>
+                    <input id="inputEndereçoLocal" required  class="inputdivInternadivFormArea"  type="text">
+                </div>
+            </div>
+          
+        </form>
+
+        <form id="formAcessarProduto" class="formMain">
+
+            <div class="divFormArea">
+                <div class="divInternadivFormArea">
+                    <p class="labeldivInternaFormAreainput">Nome:</p>
+                <input id="inputNomeAcessar" required  class="inputdivInternadivFormArea" type="text">
+                </div>
+
+                <div class="divInternadivFormArea">
+                    <p class="labeldivInternaFormAreainput">Marca</p>
+                    <input id="inputMarcaAcessar" required  class="inputdivInternadivFormArea"  type="text">
+                </div>
+            </div>
+           
+        </form>
+
+        <form id="formAcessarLocal" class="formMain">
+
+            <div class="divFormArea">
+                <div class="divInternadivFormArea">
+                    <p class="labeldivInternaFormAreainput">Nome:</p>
+                <input id="inputNomeLocalAcessar" required  class="inputdivInternadivFormArea" type="text">
+                </div>
+
+            </div>
+
+        </form>
+
+    </main>
+    <div id="divButtonForm">
+        
+        <button type="submit" form="formAdicionaProduto" id="buttonAvançarFormAdicionaProduto" class="buttonForms">Cadastrar</button>
+        <button type="submit" form="formAdicionaLocal" id="buttonAvançarFormAdicionaLocal" class="buttonForms">Cadastrar</button>
+        <button type="submit" form="formAcessarProduto" id="buttonAvançarFormAcessarProduto" class="buttonForms">Acessar</button>
+        <button type="submit" form="formAcessarLocal" id="buttonAvançarFormAcessarLocal" class="buttonForms">Acessar</button>
+    </div>
+
+    <div id="espaçamento">
+
+    </div>
+    <footer>
+        <p id="autor">Joao Pedro e Anderson</p>
+        <p>Copyright@2020.Todos os Direitos Reservados</p>
+    </footer>
+    <script src="./assets/script/script.js"></script>
+</body> 
+</body>
+</html>
